@@ -1,105 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TenderTouch Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/grid.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <h1 class="hidden">TenderTouch Project</h1>
-  <section class="spacer">
-      <header class="grid-con">
-        <div class="col-span-3 m-col-span-2 l-col-span-2 headerbox">Logo</div>
-        <nav class="col-span-1 m-col-span-10 l-col-span-10 headerbox">
-          <h2 class="hidden">Mobie Navigation</h2>
-          Nav
-        </nav>
-      </header>
-      <section class="grid-con">
-        <h2 class="hidden">Nav Bar</h2>
-        <div class="col-span-4 m-col-span-12 l-col-span-12 heroimagebox">
-          <p>Hemorroid Solution Image</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <title>TenderTouch Hemorrhoid Solutions</title>
+    <style>
+        body {
+            font-family: sans-serif; /* Apply sans-serif font to entire page */
+            
+        }
+    </style>
+</head>
+    <body>
+  <header class="grid-con">
+        <div class="col-span-3 m-col-span-3 l-col-span-3 xl-col-span-3 box-header">
+            <img src="images/logo.png" alt="TenderTouch Hemorrhoid Solutions" height="100%" width="70">
         </div>
-      </section>
-      <div class="grid-con"></div>
-        <section id="player-container" class="col-span-full">
-            <video controls preload="metadata" poster="images/placeholder.jpg">
-                <source src="video/video.mp4" type="video/mp4">
-                <source src="video/video.webm" type="video/webm">
-            </video>
-            <div class="video-controls hidden" id="video-controls">
-                <button id="play-button">
-                    <i class="fa fa-play-circle-o"></i>
-                </button>
-                <button id="pause-button">
-                    <i class="fa fa-pause-circle-o"></i>
-                </button>
-                <button id="stop-button">
-                    <i class="fa fa-stop-circle-o"></i>
-                </button>
-                <i class="fa fa-volume-up"></i>
-                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
-                <button id="full-screen">
-                    <i class="fa fa-arrows-alt"></i>
-                </button>
+        <nav class="col-start-4 col-end-5 m-col-span-9 l-col-span-9 xl-col-span-9 box-header">
+            <div id="burger-con" class="burger-con">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul id="burger-menu" class="burger-menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#hemorrhoid">What is Hemorrhoid?</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
             </div>
-      <section class="grid-con">
-        <h2 class="hidden">Offer Section</h2>
-        <div class="col-span-4 m-col-span-6 l-col-span-6 offerbox">
-          <p>What Makes Us Different Reason 1</p>
+        </nav>
+    </header>
+
+    <section class="full-width-image" id="home">
+        <div class="image-overlay">
+            <img src="images/header.jpg" alt="TenderTouch Header Image">
+            <div class="overlay-text">
+                <h2 class="heading-big">Your Comfort, Our Priority</h2>
+                <p>Effective solutions for hemorrhoid relief.</p>
+                <button class="tender-touch-button">Experience TenderTouch</button>
+            </div>
         </div>
-        <div class="col-span-4 m-col-span-6 l-col-span-6 offerbox">
-          <p>What Makes Us Different Reason 2</p>
-        </div>
-      </section>
-      <section class="grid-con">
-        <h2 class="hidden">Products Section</h2>
-        <div class="col-span-2 m-col-span-4 l-col-span-2 itembox">
-          Product 1
-        </div>
-        <div class="col-span-2 m-col-span-4 l-col-span-2 itembox">
-          Product 2
-        </div>
-        <div class="col-span-2 m-col-span-4 l-col-span-2 itembox">
-          Product 3
-        </div>
-        <div class="col-span-2 m-col-span-4 l-col-span-2 itembox">
-          Product 4
-        </div>
-        <div class="col-span-2 m-col-span-4 l-col-span-2 itembox">
-          Product 5
-        </div>
-        <div class="col-span-2 m-col-span-4 l-col-span-2 itembox">
-          Product 6
-        </div>
-      </section>
-      <section class="grid-con">
-        <h2 class="hidden">Doctor Referal Section</h2>
-        <div class="col-span-4 m-col-span-4 l-col-span-4 articlebox">
-          Doctor Anderson
-        </div>
-        <div class="col-span-4 m-col-span-4 l-col-span-4 articlebox">
-          Doctor Isabel
-        </div>
-        <div class="col-span-4 m-col-span-4 l-col-span-4 articlebox">
-          Doctor Hanks
-        </div>
-      </section>
-      <footer class="grid-con">
-        <h2 class="hidden">Website Footer</h2>
-        <div class="col-span-4 m-col-span-12 l-col-span-12 footerbox">
-          Footer
-        </div>
-      </footer>
     </section>
-  </body>
+
+
+ <section class="grid-con section-padding" id="about">
+                
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box-contact"><div  class="line-separator col-span-full m-col-start-2 m-col-end-12">
+           <h2 class="heading-big">About TenderTouch Hemorrhoid Solutions</h2>
+                    <p class="discription">TenderTouch Hemorrhoid Solutions, we believe that relief should be gentle, effective, and above all, comforting. Our mission is to provide you with the best hemorrhoid relief products that make you feel like you’re sitting on a cloud, not a cactus!<br>
+
+We understand that discussing hemorrhoids can be awkward, but we’re here to break the taboo and bring you the comfort you deserve. Our products are designed with your well-being in mind, ensuring that you can go about your day without the nagging discomfort that can ruin even the best of moments.<br>
+
+Join the thousands who have discovered the TenderTouch difference. Because when it comes to your comfort, we don’t mess around!</p>
+        </div>
+         
+    </div>
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                     <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-12">
+       
+  <video controls autoplay>
+   <source src="assets/Sequence 11.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+ </video>
+
+        </div>
+                </div>
+               
+            </section>
+
+
+
+
+
+
+
+            
+
+<section class="grid-con section-padding" id="products">
+    <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                <h2 class="heading-full">Our Products</h2>
+            </div>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 border-box">
+                   <img src="images/tube.jpeg" alt="TenderTouch Header Image" style="width: 100%; height: auto;">
+                    <h3 class="product-heading">Tender Touch Tube</h3>
+                    <p>Tender Touch Hemorrhoid Relief Tube provides soothing comfort and effective relief from itching and irritation with a gentle, fast-absorbing formula designed for targeted application.</p>
+                    <button class="tender-touch-button2">Know More</button>
+                </div>
+                   <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 border-box">
+                   <img src="images/wipes.webp" alt="TenderTouch Header Image" style="width: 100%; height: auto;">
+                    <h3 class="product-heading">Cooling Wipes</h3>
+                    <p>Tender Touch Hemorrhoid Relief Tube provides soothing comfort and effective relief from itching and irritation with a gentle, fast-absorbing formula designed for targeted application.</p>
+                    <button class="tender-touch-button2">Know More</button>
+                </div>
+                   <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 border-box">
+                   <img src="images/suppository.jpg" alt="TenderTouch Header Image" style="width: 100%; height: auto;">
+                    <h3 class="product-heading">Herbal Suppositories</h3>
+                    <p>Tender Touch Hemorrhoid Relief Tube provides soothing comfort and effective relief from itching and irritation with a gentle, fast-absorbing formula designed for targeted application.</p>
+                     <button class="tender-touch-button2">Know More</button>
+                </div>
+                  
+                 
+                
+
+            </section>
+
+ <section class="grid-con section-padding grey-section " id="hemorrhoid">
+                
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box-contact"><div  class="line-separator col-span-full m-col-start-2 m-col-end-12">
+           
+
+ <img src="images/hemmoroids.png" alt="What is Hemorrhoid" class="rounded-image">
+
+        </div>
+         
+    </div>
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                     <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-12">
+       
+<h2 class="heading-big">What is Hemorrhoid?</h2>
+<p class="discription">Hemorrhoids are swollen veins in the lower rectum and anus, often caused by increased pressure from straining during bowel movements or prolonged sitting. <br>
+            <ul class="bullet-points">
+                
+                <li>Common symptoms include pain, itching, and bleeding.</li>
+                <li>There are two types: internal and external hemorrhoids.</li>
+                <li>Many treatment options are available, including lifestyle changes and medical procedures.</li>
+            </ul>
+
+        </div>
+                </div>
+               
+            </section>
+
+            <section class="metrics-section grid-con">
+    <div class="col-span-4 m-col-span-12 l-col-span-4 xl-col-span-4 box">
+        <div class="card-box align-left">
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+                <strong>99%</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Customer Satisfaction</p>
+        </div>
+    </div>
+    <div class="col-span-4 m-col-span-12 l-col-span-4 xl-col-span-4 box">
+        <div class="card-box align-left">
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+                <strong>1000+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Happy Customers</p>
+        </div>
+    </div>
+    <div class="col-span-4 m-col-span-12 l-col-span-4 xl-col-span-4 box">
+        <div class="card-box align-left">
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+                <strong>5 Stars</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Top Rated</p>
+        </div>
+    </div>
+</section>
+
+<section class="grid-con grey-section section-padding">
+    <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+        <h2 class="heading-full">Your Burning Questions</h2>
+
+        <div class="point">
+            <h2>What are hemorrhoids? </h2>
+            <p>Hemorrhoids are swollen veins in the lower rectum and anus, similar to varicose veins. They can be caused by increased pressure in the lower rectum, often due to factors like straining during bowel movements, sitting for long periods, or pregnancy.</p>
+        </div>
+
+        <div class="point">
+             <h2>What are the common symptoms of hemorrhoids?</h2>
+            <p>Common symptoms include pain, itching, swelling, and bleeding during bowel movements. You may also notice a lump near your anus, which can be sensitive or painful.</p>
+        </div>
+
+        <div class="point">
+            <h2>How can I prevent hemorrhoids?</h2>
+            <p>To prevent hemorrhoids, maintain a healthy diet high in fiber, drink plenty of water, and exercise regularly. Avoid straining during bowel movements and take breaks if sitting for long periods.</p>
+        </div>
+
+        <div class="point">
+             <h2>What are some treatment options for hemorrhoids?</h2>
+            <p>Treatment options can include over-the-counter creams and ointments, warm baths, and lifestyle changes. In severe cases, medical procedures such as rubber band ligation or surgery may be necessary.</p>
+        </div>
+
+        <div class="point">
+            <h2>When should I see a doctor?</h2>
+            <p>If you experience significant pain, bleeding that doesn’t stop, or if your symptoms persist despite home treatment, it’s important to see a healthcare provider for a proper diagnosis and treatment plan.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+               <section class="grid-con" id="testimonial">
+               
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                    <div class="testimonial-section">
+      <div class="testimonial-container" id="testimonial-container">
+        <div class="testimonial-wrapper" id="testimonial-wrapper"></div>
+
+        <div class="navigation">
+            <button class="nav-button" id="prev">❮</button>
+            <button class="nav-button" id="next">❯</button>
+        </div>
+    </div>
+
+   <script>
+    const testimonials = [
+        {
+            name: "John Doe",
+            feedback: "TenderTouch worked quickly to relieve pain and itching, making a noticeable difference in just a few days..",
+            image: "images/perspn1.jpeg"
+        },
+        {
+            name: "Alice",
+            feedback: "TenderTouch has transformed my skincare routine! Highly recommend.",
+            image: "images/person2.jpeg"
+        },
+        {
+            name: "Bob",
+            feedback: "I love the fresh feel of TenderTouch! It’s now a must-have in my collection.",
+            image: "images/person3.jpeg"
+        }
+    ];
+
+    let currentIndex = 0;
+
+    function loadTestimonials() {
+        const wrapper = document.querySelector('#testimonial-wrapper');
+        testimonials.forEach(testimonial => {
+            const testimonialDiv = document.createElement('div');
+            testimonialDiv.classList.add('testimonial');
+            testimonialDiv.innerHTML = `
+                <img src="${testimonial.image}" alt="${testimonial.name}">
+                <div>
+                    <p>"${testimonial.feedback}"</p>
+                    <p>- ${testimonial.name}</p>
+                </div>
+            `;
+            wrapper.appendChild(testimonialDiv);
+        });
+        showTestimonial(currentIndex);
+    }
+
+    function showTestimonial(index) {
+        const wrapper = document.querySelector('#testimonial-wrapper');
+        const offset = -index * 100; 
+        wrapper.style.transform = `translateX(${offset}%)`; 
+    }
+
+    document.querySelector('#next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % testimonials.length; 
+        showTestimonial(currentIndex);
+    });
+
+    document.querySelector('#prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length; 
+        showTestimonial(currentIndex);
+    });
+
+    // Load testimonials on page load
+    window.onload = loadTestimonials;
+</script>
+
+    </div>
+                </div>
+            </section>
+<!-- ... Remaining HTML code ... -->
+ <section class="grid-con section-padding" id="contactus">
+                
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box-contact"><p><div  class="line-separator col-span-full m-col-start-2 m-col-end-12">
+            <h2 class="heading-black heading-big">LET TENDERTOUCH REACH YOU</h2>
+        </div>
+         <div id="contact-hero-address" class="col-span-full m-col-start-2 m-col-end-6">          
+            <h3 class="heading-black">"Experience TenderTouch responsibly—its irresistible allure may have you coming back for more!"<br>
+            Feel free to tweak it if you need something different!</h3>
+        </div>
+    </p></div>
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                     <div id="contact-hero-form" class="col-span-full m-col-start-6 m-col-end-12">
+            <form action="email.php" method="POST">
+                <input name="fullName" type="text" placeholder="First Name">
+                <input name="lastName" type="text" placeholder="Last Name">
+                <input name="contactInfo" type="email" required placeholder="Email">
+                <textarea name="msg" placeholder="Enter your questions/concerns/feedback for us........."></textarea>
+                <input name="submit" type="submit" value="Send">
+            </form>
+        </div>
+                </div>
+               
+            </section>
+
+
+
+
+             <section class="grid-con">
+                 
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box-flavour">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1Wp4d5hquxN92mcEs01T27eYzixw&ehbc=2E312F" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+          
+            <footer class="grid-con">
+              
+               
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+ <ul id="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#hemorrhoid">What is Hemorrhoid?</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+              <li><a href="#contactus">Contact Us</a></li>
+              
+            </ul>
+                    <img src="images/logo.png" alt="TenderTouch" height="auto" width="100">
+            
+            <h3 class="heading-full" style="padding-bottom:0px;">TenderTouch</h3>
+            <h4 style="font-size:22px;">Hemorrhoid Solutions</h4>
+           </div>
+            </footer>
+        </section>
+        <script src="js/main.js"></script>
+    </body>
 </html>
